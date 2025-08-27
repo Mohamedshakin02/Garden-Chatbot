@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+    <style>
+        /* Custom chat colors */
+        df-messenger {
+            --df-messenger-bot-message: #e0f7fa;
+            /* Bot message bubble */
+            --df-messenger-user-message: #c8e6c9;
+            /* User message bubble */
+            --df-messenger-button-titlebar-color: #4caf50;
+            /* Title bar color */
+            --df-messenger-font-color: #000000;
+            /* Text color */
+            --df-messenger-chat-background-color: #ffffff;
+            /* Chat background */
+            --df-messenger-send-icon: #4caf50;
+            /* Send icon color */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <img src="/assets/chatbot.png" alt="">
+            <h1 class="display-2 fw-medium text-light mt-2">Garden Bot</h1>
+            <p class="fs-3 fw-medium mt-2">CONVERSATIONAL CHATBOT</p>
+        </section>
+    </main>
+
+    <footer>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger intent="WELCOME" chat-title="GardenBot" agent-id="849ed9f9-c646-4c6f-ba7b-da11973c2393"
+            language-code="en" chat-icon="/assets/chat.png"></df-messenger>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
